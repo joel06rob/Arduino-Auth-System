@@ -1,0 +1,165 @@
+/* Import Instrument Sans */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Instrument Sans", sans-serif;
+    background: #f5f7fa;
+    color: #171717;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px;
+    padding: 24px;
+}
+
+/* Login and Auth Cards */
+#loginSection,
+#authSection,
+#statusSection {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+
+    padding: 32px;
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.05),
+        0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Stack Inputs & Buttons */
+#loginSection,
+#authSection {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    height: 58px;
+
+    border: 2px solid #e4e7ec;
+    border-radius: 35px;
+
+    padding: 0 22px;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    color: #171717;
+    background: #ffffff;
+
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #334155;
+    box-shadow: 0 0 0 4px rgba(51, 65, 85, 0.12);
+}
+
+input::placeholder {
+    color: #6b7280;
+}
+
+/* Buttons */
+button {
+    height: 58px;
+
+    border: none;
+    border-radius: 35px;
+
+    background: #334155;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+    box-shadow: 0 4px 10px rgba(51, 65, 85, 0.25);
+}
+
+button:hover {
+    background: #1e293b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#submitBtn {
+  width: 100%;
+  height: 64px;
+}
+
+
+
+/* Auth Heading */
+#authSection h3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* Status Area */
+#statusSection {
+    text-align: center;
+}
+
+#statusText {
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #475569; /* Default locked state */
+}
+
+/* Status Colors */
+#statusText.granted {
+    color: #16a34a;
+}
+
+#statusText.denied {
+    color: #dc2626;
+}
+
+/* Authentication Code Input */
+#codeInput {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    #loginSection,
+    #authSection,
+    #statusSection {
+        padding: 24px;
+    }
+
+    #statusText {
+        font-size: 22px;
+    }
+}

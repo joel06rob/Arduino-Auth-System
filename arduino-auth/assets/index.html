@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div id="loginSection">
+
+      <input id="usernameInput" type="text" placeholder="Username" required></input>
+      <input id="passwordInput" type="password" placeholder="Password" required></input>
+      <button id="loginBtn">
+      Login
+      </button>
+    </div>
+    
+
+    <div id="authSection" style="display:none;">
+
+      <h3>Enter Authentication Code</h3>
+  
+      <input id="codeInput" type="text" maxlength="3">
+  
+      <button id="submitBtn">
+          Submit
+      </button>
+  
+    </div>
+
+
+    <div id="statusSection">
+
+      <h2 id="statusText">
+          Locked
+      </h2>
+  
+  </div>
+
+    <script src="https://cdn.socket.io/4.8.3/socket.io.min.js" integrity="sha384-kzavj5fiMwLKzzD1f8S7TeoVIEi7uKHvbTA3ueZkrzYq75pNQUiUi6Dy98Q3fxb0" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
